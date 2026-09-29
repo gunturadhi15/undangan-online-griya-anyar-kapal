@@ -593,8 +593,8 @@
        ===================================================== */
     const cfg = {
       participants: [
-        { name: 'Gus Ari', father: 'Ida Bagus Surya Miasa S.E', mother: 'Ida Ayu Agung Evi Budiani S.E', photo: 'Image/GusAri.jpeg' },
-        { name: 'Gus Wira', father: 'Ida Bagus Surya Miasa S.E', mother: 'Ida Ayu Agung Evi Budiani S.E', photo: 'Image/GusWira.jpeg' }
+        { name: 'Ida Bagus Dwira Adnyana. S.M', father: 'Ida Bagus Surya Miasa S.E', mother: 'Ida Ayu Agung Evi Budiani S.E', photo: 'Image/GusWira.jpeg' },
+        { name: 'Ida Bagus Ari Pradana', father: 'Ida Bagus Surya Miasa S.E', mother: 'Ida Ayu Agung Evi Budiani S.E', photo: 'Image/GusAri.jpeg' }
       ],
       family: 'Keluarga Besar',
       eventName: 'Metatah / Mepandes',
@@ -647,7 +647,7 @@
       $('participantsWrap').innerHTML = cfg.participants.map(p =>
         '<div style="max-width:150px;text-align:center"><div class="photo">' + (p.photo ? '' : '🙏') + '</div>' +
         '<div class="serif" style="font-size:22px;font-weight:600;margin-top:14px;line-height:1.2">' + esc(p.name) + '</div>' +
-        '<p style="font-size:12px;margin-top:4px">Putra/Putri dari</p>' +
+        '<p style="font-size:12px;margin-top:4px">Putra dari</p>' +
         '<p class="serif" style="font-size:15px">' + esc(p.father) + ' &amp; ' + esc(p.mother) + '</p></div>').join('');
       document.querySelectorAll('.photo').forEach((el, i) => {
         const p = cfg.participants[i];
